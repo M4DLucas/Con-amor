@@ -1,0 +1,148 @@
+:root{
+    --bg1:#fff8e7;
+    --bg2:#fff0f5;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0;
+    padding:0;
+    min-height:100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--bg1), #ffffff);
+    transition: background 0.8s ease;
+    overflow-x:hidden;
+  }
+  body.pink{
+    background: linear-gradient(135deg, var(--bg2), #ffffff);
+  }
+  .container{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+    text-align:center;
+  }
+  h1{
+    font-size:clamp(1.3rem, 4vw, 2.2rem);
+    color:#7a5a2e;
+    margin-bottom:30px;
+    max-width:600px;
+    line-height:1.4;
+    transition: color 0.6s ease;
+    font-weight:600;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  body.pink h1{
+    color:#c2185b;
+  }
+  .bouquet{
+    cursor:pointer;
+    user-select:none;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 0.15s ease;
+    touch-action: manipulation;
+  }
+  .bouquet:hover{
+    transform: scale(1.03);
+  }
+  .bouquet:active{
+    transform: scale(0.97);
+  }
+  .hint{
+    margin-top:22px;
+    font-size:0.9rem;
+    color:#a08a5a;
+    opacity:0.8;
+    animation: pulse 2s infinite;
+  }
+  body.pink .hint{
+    color:#d17ca0;
+  }
+  @keyframes pulse{
+    0%,100%{opacity:0.5;}
+    50%{opacity:1;}
+  }
+  .stem{
+    stroke:#4a7c3f;
+    stroke-width:4;
+    fill:none;
+  }
+  .petal{fill:#ffd93d; transition: fill 0.5s ease;}
+  .petal-alt{fill:#ffc93d; transition: fill 0.5s ease;}
+  .center{fill:#e8971e; transition: fill 0.5s ease;}
+  #flowersGroup.pink .petal{fill:#ff8fb3;}
+  #flowersGroup.pink .petal-alt{fill:#ff6fa0;}
+  #flowersGroup.pink .center{fill:#8b3a5e;}
+  .leaf{fill:#5a9c4a;}
+
+  .flower{
+    transform-origin: center;
+  }
+
+  svg{
+    max-width: 90vw;
+    height: auto;
+  }
+
+  footer{
+    margin-top:40px;
+    font-size:0.75rem;
+    color:#c9b98a;
+  }
+  body.pink footer{
+    color:#e3a8c0;
+  }
+
+  #petalsBg{
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:0;
+  }
+  .container{
+    position:relative;
+    z-index:1;
+  }
+  .falling-petal{
+    position:absolute;
+    top:-20px;
+    border-radius: 50% 0 50% 50%;
+    opacity:0.85;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  h6{
+    color: #000000;
+    font-size: 0.5rem;
+    margin-top: 20px;
+  }
+  @keyframes fall{
+    0%{
+      transform: translateY(0) translateX(0) rotate(0deg);
+    }
+    100%{
+      transform: translateY(110vh) translateX(var(--drift, 40px)) rotate(360deg);
+    }
+  }
+  .burst-heart{
+    position:fixed;
+    pointer-events:none;
+    font-size:22px;
+    z-index:50;
+    animation: burstUp 1.1s ease-out forwards;
+  }
+  @keyframes burstUp{
+    0%{
+      transform: translate(0,0) scale(0.6);
+      opacity:1;
+    }
+    100%{
+      transform: translate(var(--bx,0px), var(--by,-120px)) scale(1.2);
+      opacity:0;
+    }
+  }

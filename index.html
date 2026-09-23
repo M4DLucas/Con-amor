@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para vos</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div id="petalsBg"></div>
+  <div class="container">
+    <h1 id="message">Te amo con todo mi ser, hoy y siempre</h1>
+
+    <div class="bouquet" id="bouquet" onclick="toggleFlowers()">
+      <svg id="svg" viewBox="0 0 400 420" width="360" height="378" xmlns="http://www.w3.org/2000/svg">
+
+        <path class="stem" d="M 130 380 Q 120 300 150 230"/>
+        <path class="stem" d="M 200 390 Q 200 300 200 220"/>
+        <path class="stem" d="M 270 380 Q 280 300 250 230"/>
+        <path class="stem" d="M 165 385 Q 160 320 180 250"/>
+        <path class="stem" d="M 235 385 Q 240 320 220 250"/>
+
+        
+        <path class="leaf" d="M 150 320 Q 110 310 100 280 Q 140 285 150 320 Z"/>
+        <path class="leaf" d="M 250 320 Q 290 310 300 280 Q 260 285 250 320 Z"/>
+        <path class="leaf" d="M 200 300 Q 170 290 160 265 Q 195 270 200 300 Z"/>
+
+      
+        <path d="M 110 370 Q 200 400 290 370 L 280 395 Q 200 415 120 395 Z" fill="#e07a9e"/>
+
+        
+        <g id="flowersGroup">
+<g class="flower" transform="translate(150,220)"><ellipse class="petal" cx="0" cy="-34.2" rx="10.6" ry="20.9" transform="rotate(0.0)"/><ellipse class="petal-alt" cx="0" cy="-34.2" rx="10.6" ry="20.9" transform="rotate(36.0)"/><ellipse class="petal" cx="0" cy="-34.2" rx="10.6" ry="20.9" transform="rotate(72.0)"/><ellipse class="petal-alt" cx="0" cy="-34.2" rx="10.6" ry="20.9" transform="rotate(108.0)"/><ellipse class="petal" cx="0" cy="-34.2" rx="10.6" ry="20.9" transform="rotate(144.0)"/><ellipse class="petal-alt" cx="0" cy="-34.2" rx="10.6" ry="20.9" transform="rotate(180.0)"/><ellipse class="petal" cx="0" cy="-34.2" rx="10.6" ry="20.9" transform="rotate(216.0)"/><ellipse class="petal-alt" cx="0" cy="-34.2" rx="10.6" ry="20.9" transform="rotate(252.0)"/><ellipse class="petal" cx="0" cy="-34.2" rx="10.6" ry="20.9" transform="rotate(288.0)"/><ellipse class="petal-alt" cx="0" cy="-34.2" rx="10.6" ry="20.9" transform="rotate(324.0)"/><circle class="center" cx="0" cy="0" r="14.4"/></g>
+<g class="flower" transform="translate(220,240)"><ellipse class="petal" cx="0" cy="-30.6" rx="9.5" ry="18.7" transform="rotate(0.0)"/><ellipse class="petal-alt" cx="0" cy="-30.6" rx="9.5" ry="18.7" transform="rotate(36.0)"/><ellipse class="petal" cx="0" cy="-30.6" rx="9.5" ry="18.7" transform="rotate(72.0)"/><ellipse class="petal-alt" cx="0" cy="-30.6" rx="9.5" ry="18.7" transform="rotate(108.0)"/><ellipse class="petal" cx="0" cy="-30.6" rx="9.5" ry="18.7" transform="rotate(144.0)"/><ellipse class="petal-alt" cx="0" cy="-30.6" rx="9.5" ry="18.7" transform="rotate(180.0)"/><ellipse class="petal" cx="0" cy="-30.6" rx="9.5" ry="18.7" transform="rotate(216.0)"/><ellipse class="petal-alt" cx="0" cy="-30.6" rx="9.5" ry="18.7" transform="rotate(252.0)"/><ellipse class="petal" cx="0" cy="-30.6" rx="9.5" ry="18.7" transform="rotate(288.0)"/><ellipse class="petal-alt" cx="0" cy="-30.6" rx="9.5" ry="18.7" transform="rotate(324.0)"/><circle class="center" cx="0" cy="0" r="12.9"/></g>
+<g class="flower" transform="translate(200,150)"><ellipse class="petal" cx="0" cy="-37.8" rx="11.8" ry="23.1" transform="rotate(0.0)"/><ellipse class="petal-alt" cx="0" cy="-37.8" rx="11.8" ry="23.1" transform="rotate(36.0)"/><ellipse class="petal" cx="0" cy="-37.8" rx="11.8" ry="23.1" transform="rotate(72.0)"/><ellipse class="petal-alt" cx="0" cy="-37.8" rx="11.8" ry="23.1" transform="rotate(108.0)"/><ellipse class="petal" cx="0" cy="-37.8" rx="11.8" ry="23.1" transform="rotate(144.0)"/><ellipse class="petal-alt" cx="0" cy="-37.8" rx="11.8" ry="23.1" transform="rotate(180.0)"/><ellipse class="petal" cx="0" cy="-37.8" rx="11.8" ry="23.1" transform="rotate(216.0)"/><ellipse class="petal-alt" cx="0" cy="-37.8" rx="11.8" ry="23.1" transform="rotate(252.0)"/><ellipse class="petal" cx="0" cy="-37.8" rx="11.8" ry="23.1" transform="rotate(288.0)"/><ellipse class="petal-alt" cx="0" cy="-37.8" rx="11.8" ry="23.1" transform="rotate(324.0)"/><circle class="center" cx="0" cy="0" r="16.0"/></g>
+<g class="flower" transform="translate(180,260)"><ellipse class="petal" cx="0" cy="-27.0" rx="8.4" ry="16.5" transform="rotate(0.0)"/><ellipse class="petal-alt" cx="0" cy="-27.0" rx="8.4" ry="16.5" transform="rotate(36.0)"/><ellipse class="petal" cx="0" cy="-27.0" rx="8.4" ry="16.5" transform="rotate(72.0)"/><ellipse class="petal-alt" cx="0" cy="-27.0" rx="8.4" ry="16.5" transform="rotate(108.0)"/><ellipse class="petal" cx="0" cy="-27.0" rx="8.4" ry="16.5" transform="rotate(144.0)"/><ellipse class="petal-alt" cx="0" cy="-27.0" rx="8.4" ry="16.5" transform="rotate(180.0)"/><ellipse class="petal" cx="0" cy="-27.0" rx="8.4" ry="16.5" transform="rotate(216.0)"/><ellipse class="petal-alt" cx="0" cy="-27.0" rx="8.4" ry="16.5" transform="rotate(252.0)"/><ellipse class="petal" cx="0" cy="-27.0" rx="8.4" ry="16.5" transform="rotate(288.0)"/><ellipse class="petal-alt" cx="0" cy="-27.0" rx="8.4" ry="16.5" transform="rotate(324.0)"/><circle class="center" cx="0" cy="0" r="11.4"/></g>
+<g class="flower" transform="translate(255,190)"><ellipse class="petal" cx="0" cy="-32.4" rx="10.1" ry="19.8" transform="rotate(0.0)"/><ellipse class="petal-alt" cx="0" cy="-32.4" rx="10.1" ry="19.8" transform="rotate(36.0)"/><ellipse class="petal" cx="0" cy="-32.4" rx="10.1" ry="19.8" transform="rotate(72.0)"/><ellipse class="petal-alt" cx="0" cy="-32.4" rx="10.1" ry="19.8" transform="rotate(108.0)"/><ellipse class="petal" cx="0" cy="-32.4" rx="10.1" ry="19.8" transform="rotate(144.0)"/><ellipse class="petal-alt" cx="0" cy="-32.4" rx="10.1" ry="19.8" transform="rotate(180.0)"/><ellipse class="petal" cx="0" cy="-32.4" rx="10.1" ry="19.8" transform="rotate(216.0)"/><ellipse class="petal-alt" cx="0" cy="-32.4" rx="10.1" ry="19.8" transform="rotate(252.0)"/><ellipse class="petal" cx="0" cy="-32.4" rx="10.1" ry="19.8" transform="rotate(288.0)"/><ellipse class="petal-alt" cx="0" cy="-32.4" rx="10.1" ry="19.8" transform="rotate(324.0)"/><circle class="center" cx="0" cy="0" r="13.7"/></g>
+        </g>
+      </svg>
+    </div>
+
+    <p class="hint" id="hint">toca el ramo</p>
+    <footer>hecho con todo mi amor</footer>
+    <h6>Russi puto boton</h6>
+  </div>
+
+<script src="petalitos.js"></script>
+</body>
+</html>
